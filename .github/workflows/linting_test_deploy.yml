@@ -1,0 +1,14 @@
+name: Lint, Test and Deploy
+on: push
+jobs:
+  pull-code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone Code
+        uses: sudosubin/git-clone-action@v1
+      - name: Install Dependencies
+        run: npm install
+      - name: Lint Code
+        run: npm run lint
+      - name: Test Code 
+        run: npm run test
