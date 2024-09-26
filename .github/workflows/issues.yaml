@@ -1,7 +1,8 @@
 name: Issue Details
 on: [workflow_dispatch, issues]
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-    - name: echo Event Details
-      run: echo ${{ github }}
+  Issue Details:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo Event Details
+        run: echo ${{ github }}
