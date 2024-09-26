@@ -12,3 +12,13 @@ jobs:
         run: npm run lint
       - name: Test Code 
         run: npm run test
+  
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pull Code
+        run: actions/checkout@v3
+      - name: Install Dependencies
+        run: npm install
+      - name: Deploy Code
+        run: echo "Code, Deployed"
