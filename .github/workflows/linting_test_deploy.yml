@@ -1,8 +1,8 @@
 name: Lint, Test and Deploy
 on: 
   push:
-    - branch:
-        - dev
+    branch:
+      - dev
 
 jobs:
   pull-code:
